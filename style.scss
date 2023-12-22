@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_visual {
+    width: 100%;
+    height: 300vh;
+    background: #ccc;
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    position: fixed;
+    width: 100%;
+    transition: all 0.4s;
+
+    a {
+        color: #fff;
+        padding: 0 1.5em;
+    }
+}
+
+nav.active {
+    background: #fff;
+    a { color: #000; }
+}
